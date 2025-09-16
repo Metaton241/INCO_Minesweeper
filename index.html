@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCO Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="inco_network_logo.jpg" alt="INCO Network Logo" class="logo">
+            <h1>INCO Minesweeper</h1>
+            <p>Dedicated to the INCO Project</p>
+        </header>
+        
+        <div class="game-info">
+            <div class="info-panel">
+                <div class="mines-counter">Mines: <span id="mines-count">10</span></div>
+                <button id="reset-button">😊</button>
+                <div class="timer">Time: <span id="timer">0</span></div>
+            </div>
+        </div>
+        
+        <div class="game-container">
+            <div id="game-board"></div>
+        </div>
+        
+        <div class="instructions">
+            <h2>How to Play</h2>
+            <ul>
+                <li><strong>Left Click</strong> - Reveal a cell</li>
+                <li><strong>Right Click</strong> - Place/remove flag</li>
+                <li>Find all mines without detonating any to win!</li>
+            </ul>
+        </div>
+        
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <table id="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Time (seconds)</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <!-- Leaderboard will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
